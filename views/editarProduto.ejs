@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=h1, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Editar Produto</h1>
+  <form action="/produto/editar?_method=PUT" method="post">
+  <input type="text" name="produtoNome" value="<%= listaProdutos.nome %> ">
+  <input type="text" name="produtoPreco" value="<%= listaProdutos.preco %> ">
+  <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
